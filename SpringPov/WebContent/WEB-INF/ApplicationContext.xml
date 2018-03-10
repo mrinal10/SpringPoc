@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd 
+	http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd 
+	http://www.springframework.org/schema/task 
+	http://www.springframework.org/schema/task/spring-task-3.0.xsd" 
+
+	xmlns:task="http://www.springframework.org/schema/task" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.springframework.org/schema/beans">
+
+	<bean name="loginModel" class="org.springStarter.beans.model.LoginModel"/>
+	<bean name="printer" class="org.springStarter.checker.SpringScheduler">
+		<property name="loginModel" ref="loginModel"/>
+	</bean>
+	<context:component-scan base-package="org.springStarter.beans"/>
+<!-- 	<task:scheduled-tasks scheduler="printingScheduler"> -->
+<!-- 	  <task:scheduled ref="printer" method="print" fixed-delay="3000" /> -->
+<!-- 	</task:scheduled-tasks> -->
+	 
+<!-- 	<task:scheduler id="printingScheduler" /> -->
+	<task:annotation-driven/>
+	<mvc:annotation-driven/>
+
+</beans>

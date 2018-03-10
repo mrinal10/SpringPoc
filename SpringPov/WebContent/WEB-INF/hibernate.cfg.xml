@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+ 
+	<class name="POJO class name" table="table name in database">
+		<id name="variable name" column="column name in database" type="java/hibernate type" />
+		<property name="variable1 name" column="column name in database" type="java/hibernate type" />
+		<property name="variable2 name" column="column name in database" type="java/hibernate type" />
+	</class>
+ 
+</hibernate-mapping>
