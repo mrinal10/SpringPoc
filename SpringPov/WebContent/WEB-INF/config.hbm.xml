@@ -10,14 +10,14 @@
 <!-- Related to the connection END -->
  
 <!-- Related to hibernate properties START -->
-<property name="show_sql">true/false</property>
+<property name="show_sql">true</property>
 <property name="dialet">Database dialet class</property>
 <property name="hbm2ddl.auto">create/update or what ever</property>
 <!-- Related to hibernate properties END-->
  
 <!-- Related to mapping START-->
-<mapping resource="hbm file 1 name .xml" / >
-<mapping resource="hbm file 2 name .xml" / >
+<!-- <mapping resource="hbm file 1 name .xml" / > -->
+<!-- <mapping resource="hbm file 2 name .xml" / > -->
 <!-- Related to the mapping END -->
  
 </session-factory>
