@@ -2,7 +2,7 @@
 
 <hibernate-mapping>
  
-	<class name="POJO class name" table="table name in database">
+	<class name="org.springStarter.dao.model.beans.PersonModel" table="person">
 		<id name="variable name" column="column name in database" type="java/hibernate type" />
 		<property name="variable1 name" column="column name in database" type="java/hibernate type" />
 		<property name="variable2 name" column="column name in database" type="java/hibernate type" />
