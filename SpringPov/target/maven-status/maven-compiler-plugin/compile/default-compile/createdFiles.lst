@@ -1,3 +1,3 @@
-org\springStarter\beans\model\LoginModel.class
 org\springStarter\dao\model\beans\PersonModel.class
 org\springStarter\checker\SpringScheduler.class
+org\springStarter\beans\model\LoginModel.class

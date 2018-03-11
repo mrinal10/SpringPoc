@@ -17,6 +17,7 @@
 	xmlns="http://www.springframework.org/schema/beans">
 
 	<bean name="loginModel" class="org.springStarter.beans.model.LoginModel"/>
+	<bean name = "personModel" class="org.springStarter.dao.model.beans.PersonModel"/>	
 	<bean name="printer" class="org.springStarter.checker.SpringScheduler">
 		<property name="loginModel" ref="loginModel"/>
 	</bean>

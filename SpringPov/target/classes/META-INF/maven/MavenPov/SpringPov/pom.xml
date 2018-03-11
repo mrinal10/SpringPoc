@@ -10,17 +10,11 @@
 		<org.springframework-version>4.3.7.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.8.1</org.aspectj-version>
 		<hibernate.version>4.3.5.Final</hibernate.version>
-		<mysql.connector.version>6.0.4</mysql.connector.version>
+		<mysql.connector.version>5.1.41</mysql.connector.version>
 	</properties>
 
 	<dependencies>
-		<!-- MySQL -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.connector.version}</version>
-        </dependency>
-        
+		
 		<!-- Hibernate -->
 		<dependency>
 		    <groupId>org.hibernate</groupId>
@@ -32,6 +26,14 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
+		
+		<!-- MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
+        </dependency>
+        
 		<!-- Spring ORM -->
 		<dependency>
 			<groupId>org.springframework</groupId>
